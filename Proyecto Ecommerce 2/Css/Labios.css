@@ -1,0 +1,394 @@
+/* ------------------FUENTES------------------- */
+@font-face{
+    font-family: 'Lato', sans-serif;
+    src: url('../Font/Lato/Lato-Bold.ttf');
+}
+@font-face {
+    font-family: 'Lato-Light';
+    src: url('../Font/Lato/Lato-Light.ttf');
+}
+@font-face{
+    font-family: 'Lato-Thin';
+    src: url('../Font/Lato/Lato-Thin.ttf');
+}
+@font-face{
+    font-family: 'Lato-BoldItalic';
+    src: url('../Font/Lato/Lato-BoldItalic.ttf');
+}
+@font-face {
+     font-family: 'PlayfairDisplay-SemiBold', serif;;
+    src: url('../Font/Playfair_Display/static/PlayfairDisplay-SemiBold.ttf');
+}
+@font-face{
+    font-family: 'PlayfairDisplay-MediumItalic';
+    src: url('../Font/Playfair_Display/static/PlayfairDisplay-MediumItalic.ttf');
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/*---------------------VARIABLES DE COLORES------------------*/
+:root{
+    --color1: rgb(99,65,65);
+    --color2: #fff;
+    --color3: rgb(12, 12, 12);
+    --color4: #000000;
+    --color5: rgb(255,255,255);
+    --color6: rgb(209,153,153);
+    --color7: #5E5E5E;
+    --color8 :#575757;
+    --color9: #ccc;
+    --color10:#754D4D;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* ------------------HEADER---------------------*/
+/* ------ESTILOS DEL BUSCADOR E ICONOS DE REDES SOCIALES--------*/
+/* #nav-bar{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    transition: 0.3;
+} */
+.container-fluido{
+    width: 100%;
+    height: auto;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    /* transition: 0.3; */
+}
+.buscador{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color4);
+    padding: 10px;
+}
+.buscar{
+    width: 200px;
+    margin-left: 20px;
+    text-align: center;
+}
+.buscar form{
+    display: flex;
+}
+.lupa{
+    width: 50px;
+    margin-top: 5px;
+    font-size: 14px;
+    font-family: 'Lato-Light';
+    color: var(--color6);
+    cursor: text;
+    margin-right: 5px;
+}
+.buscador-input input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 200px;
+}
+.buscador-input input:hover{
+    border-bottom: 1px solid var(--color2);
+    width: 200px;
+}
+.buscador-input ::placeholder{
+    color: var(--color2);
+    font-family: 'Lato-Light';
+    font-size: 14px;
+}
+.box-descuento{
+    width: 200px;
+    text-align: center;
+}
+.box-descuento .descuento{
+    color: var(--color2);
+    font-family: 'Lato-Light';
+    font-size: 18px;
+}
+.contenedor-redes-sociales{
+    width: 300px;
+    display: contents;
+}
+.box-redes-sociales a {
+    color: var(--color2);
+    padding: 20px 0;
+    font-size: 18px;
+    margin: 0 15px;
+ }
+.box-redes-sociales a:hover{
+    color: var(--color6);
+ }
+/*------ESTILOS DEL LOGO Y EL MENU DE NAVEGACION------*/
+.contenedor-nav{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.contenedor-nav .nav-bar{
+    width: 100%;
+    height: 60px;
+    background-color: var(--color1 ) ;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+ .box-logo .logo{
+    color: var(--color2);
+    font-size: 24px;
+    font-family: 'PlayfairDisplay-SemiBold';
+    font-weight: 300;
+    text-decoration: none;
+}
+.nav .navb-link{
+    color: var(--color2);
+    text-decoration: none;
+    padding: 15px;
+    font-family: 'Lato-Light';
+    font-size: 14px;
+}
+.nav .navb-link:hover{
+    color: var(--color6);
+}
+/* -----ESTILOS DE ICONOS PARA EL LOGIN Y CARRITO -------*/
+.user{
+    color: var(--color2);
+    font-size: 18px;
+}
+.cartera{
+    color: var(--color2);
+    font-size: 18px;
+}
+.entrar {
+    color: var(--color2);
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Lato-Light';
+}
+.entrar:hover{
+    color: var(--color6);
+    text-decoration: none;
+}
+/* ---------ESTILOS DE IMAGEN DE FONDO DESPUES DEL MENU DE NAVEGACION----------- */
+.imagen-labios{
+    background-image: url('../Img/IMG/header-labios.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    width: 100%;
+    height: 250px;
+}
+.texto-h1{
+    text-align: center;
+    font-family: 'PlayfairDisplay-SemiBold';
+    font-size: 48px;
+    color: var(--color2);
+    padding: 60px;
+}
+/* ----------ESTILOS DEL MAIN----------- */
+.container-productos{
+    display: grid;
+    justify-content:space-around;
+    grid-template-columns: 250px 250px 250px ; 
+    gap: 10px;
+    padding: 10px;
+  }
+  .container-productos > .card-producto{
+    text-align: center;
+    padding: 20px 0;
+  }
+  .card-producto .imagen-producto{
+    width: 200px;
+  }
+.btn-ver-detalle{
+    border: none;
+    background-color:transparent;
+    width: 100%;
+}
+.btn-ver-detalle a{
+    text-decoration: none;
+    color: var(--color6);
+    font-family: 'Lato-Light';
+    font-weight: bold;
+    font-size: 16px;
+}
+.btn-ver-detalle a:hover{
+    text-decoration: none;
+    color: var(--color10);
+    font-family: 'Lato-Light';
+    font-size: 16px;
+    font-weight: 600;
+}
+.btn-ver-detalle .txt-nombre-producto{
+    font-family: 'Lato-Light';
+    font-size: 16px;
+    text-transform: lowercase;
+}
+.txt-nombre-producto::first-letter{
+    text-transform: uppercase;
+}
+.precio{
+    font-family: 'Lato-Light';
+    font-size: 14px;
+    color: var(--color7);
+}
+#btn-ver-detalle-carrito{
+    border: none;
+    background-color:transparent;
+    width: 100%;
+}
+#carrito_icon{
+    color: var(--color10);
+}
+/*-----------PIE DE PAGINA-------------*/
+.footer{
+    background-color: var(--color3);
+    width: 100%;
+    padding: 40px;
+    margin-top: 40px;
+}
+.registro form{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+ .label-email-registro{
+    font-family: 'Lato-Light';
+    color: var(--color2);
+    font-size: 18px;
+}
+ .email input[type= email]{
+    width: 500px;
+  padding: 12px 20px;
+  border: 1px solid var(--color2);
+  background-color: transparent;
+  font-size: 18px;
+}
+.email  ::placeholder{
+    color: var(--color2);
+}
+.email input:focus[type= email]{
+  background-color: var(--color2);
+  font-size: 18px;
+  outline: none;
+}
+.submit input[type= submit]{
+    width: 200px;
+    padding: 12px 20px;
+    background-color: var(--color2);
+    font-size: 18px;
+    transition: all 1s;
+}
+.submit input:hover[type= submit]{
+    background-color: var(--color4);
+    color: var(--color2);
+}
+.contenedor-footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+}
+.contenedor-footer .contenedor1{
+    display: flex;
+    flex-direction: column;
+}
+.contenedor1 h4{
+    font-family: 'PlayfairDisplay-SemiBold';
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--color2);
+}
+.contenedor1 a{
+    text-decoration: none;
+    color: var(--color2);
+    font-family: 'Lato-Light';
+    font-size: 14px;
+    padding: 5px;
+}
+.contenedor1 a:hover{
+    text-decoration: none;
+    color: var(--color6);
+    font-family: 'Lato-Light';
+    font-size: 14px;
+}
+.contenedor-footer h4{
+    font-family: 'PlayfairDisplay-SemiBold';
+    font-weight: 600;
+    font-size: 24px;
+}
+.contenedor-footer .contenedor2{
+    color: var(--color2);
+    font-family: 'Lato-Light';
+    font-size: 14px;
+}
+.contenedor2 a{
+    text-decoration: none;
+    color: var(--color2);
+    font-family: 'Lato-Light';
+    font-size: 14px;
+    padding: 5px;
+}
+.contenedor2 a:hover{
+    text-decoration: none;
+    color: var(--color6);
+    font-family: 'Lato-Light';
+    font-size: 14px;
+}
+.contenedor-footer .contenedor3{
+    color: var(--color2);
+    font-family: 'Lato-Light';
+    font-size: 14px;
+}
+.contenedor-footer .contenedor4{
+    color: var(--color2);
+    font-family: 'Lato-Light';
+    font-size: 14px;
+}
+.contenedor4 a{
+    text-decoration: none;
+    color: var(--color2);
+    font-family: 'Lato-Light';
+    font-size: 14px;
+    padding: 5px;
+}
+.contenedor4 a:hover{
+    text-decoration: none;
+    color: var(--color6);
+    font-family: 'Lato-Light';
+    font-size: 14px;
+}
+.h3-footer{
+    font-family: 'PlayfairDisplay-SemiBold';
+    color: var(--color2);
+    font-size: 48px;
+    font-weight: 300;
+    text-align: center;
+}
+.txt-parrafo3{
+    font-family: 'Lato-Light';
+    color: var(--color2);
+    font-size: 18px;
+    text-align: center;
+}
+.box-redes-sociales a {
+    color: var(--color2);
+    padding: 20px 0;
+    font-size: 18px;
+    margin: 0 15px;
+ }
+.box-redes-sociales a:hover{
+    color: var(--color6);
+ }

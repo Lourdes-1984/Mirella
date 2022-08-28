@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./Css/Registro.css" />
+    <link rel="stylesheet" href="./Css/Bootstrap/bootstrap.min.css" />
+    <title>Registro</title>
+</head>
+<body>
+    <header>
+        <div class="contenedor-nav">
+            <nav class="nav-bar">
+                <div class="nav-logo">
+                    <a class="logo" href="./Home.html">Mirella</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class=" sect1">
+            <h2>Crear usuario nuevo</h2>
+            <br>
+            <form action="#" method="post" class="row g-2 needs-validation">
+                <div class="col-7">
+                    <label for="InputName" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="InputName" value=""  required>
+                    <div id="NameHelp" class="form-text">Coloca tu Nombre</div>
+                </div>
+                <div class="col-7">
+                    <label for="InputLastName" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="InputLastName"  required>
+                    <div id="LastNameHelp" class="form-text">Coloca tu Apellido</div>
+                </div>
+                <div class="col-7">
+                    <label for="InputCountry" class="form-label">País</label>
+                    <input type="text" class="form-control" id="InputCountry" >
+                    <div id="CountryHelp" class="form-text">Coloca tu País</div>
+                </div>
+                <div class="col-7">
+                    <label for="InputCity" class="form-label">Ciudad</label>
+                    <input type="text" class="form-control" id="InputCity" >
+                    <div id="CityHelp" class="form-text">Coloca tu Ciudad</div>
+                </div>
+                <div class="col-7">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                    <div id="emailHelp" class="form-text">Coloca tu email</div>
+                </div>
+                <div class="col-7">
+                    <label for="InputPassword" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="InputPassword" required>
+                </div>
+                <div class="col-7">
+                    <label for="InputPassword1" class="form-label">Repite tu Contraseña</label>
+                    <input type="password" class="form-control" id="InputPassword1" required>
+                </div>
+                <div class="col-7">
+                    <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                      Acepta terminos y condiciones
+                    </label>
+                    <div class="invalid-feedback">
+                      Necesitas aceptar para registrarte.
+                    </div>
+                </div>
+                </div>
+                <div class="col-7"> 
+                  <br>  
+                <button type="button" class="btn btn-primary btn-sm gap" id="btnRegistrarse">Registrarse</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <script src="./Js/Bootstrap/bootstrap.min.js"></script>
+    <script src="./Js/Util.js"></script>
+    <script src="./Js/Servicios.js"></script>
+    <script src="./Js/Registo.js"></script>
+</body>
+</html>

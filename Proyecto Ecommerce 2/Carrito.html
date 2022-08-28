@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./Css/Carrito.css" />
+    <link rel="stylesheet" href="./Css/Bootstrap/bootstrap.min.css" />
+    <link rel="shortcut icon" href="Icon/cosmetics-makeup-svgrepo-com.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
+    <title>Carrito</title>
+</head>
+<body>
+    <!-- div de toda la pagina-->
+    <div class="body-carrito">
+        <!-- header-->
+        <header>
+            <!-- --------  FORM BUSCADOR-------------- -->
+            <div class="buscador">
+                <div class="buscar">
+                    <form action="#">
+                        <div class="lupa">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="buscador-input">
+                            <a href="./Comprar-todo.html">
+                                <input type="search" name="input-buscar" id="input-buscar"
+                                    placeholder="¿Qué estás buscando? " />
+                            </a>
+                        </div>
+                    </form>
+                </div>
+                <!-- ---------TEXTO DEL DESCUENTO---------------- -->
+                <div class="box-descuento">
+                    <h3 class="descuento">15% en todo el sitio </h3>
+                </div>
+                <!-- ------------ICONOS DE REDES SOCIALES----------- -->
+                <div class=" contenedor-redes-sociales">
+                    <div class="box-redes-sociales">
+                        <a class="facebook" href=""><i class="fab fa-facebook"></i></a>
+                        <a class="twitter" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="youtube" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="instagram" href=""><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- -----------LOGO Y NAV DE NAVEGACION---------- -->
+            <div class="container-flui">
+                <div class="contenedor-nav">
+                    <nav class="nav-bar">
+                        <div class="nav-logo">
+                            <a class="logo" href="./Home.html">Mirella</a>
+                        </div>
+                        <div class="nav">
+                            <a class="navb-link" href="Comprar-todo.html">COMPRAR TODO</a>
+                            <a class="navb-link" href="Nuevo.html">NUEVO</a>
+                            <a class="navb-link" href="Labios.html">LABIOS</a>
+                            <a class="navb-link" href="Rostro.html">ROSTRO</a>
+                            <a class="navb-link" href="Ojos.html">OJOS</a>
+                            <a class="navb-link" href="Uñas.html">UÑAS</a>
+                            <a class="navb-link" href="Cejas.html">CEJAS</a>
+                        </div>
+                        <!-- -------------ICONOS PARA EL LOGIN Y EL CARRITO DE COMPRAS------ -->
+                        <div class="login">
+                            <a href="./Login.html">
+                                <i class="fas fa-user-circle user"></i>
+                            </a>
+                        </div>
+                        <a class="entrar" href="Login.html">Entrar</a>
+                        <div>
+                            <a href="">
+                                <i class="fas fa-shopping-bag cartera"></i>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+        </header>
+        <!--cuerpo principal-->
+        <main class="main">
+            <!--carrito-->
+            <section class="sec1">
+                <div class="carrito1">
+                    <h2>Mi carrito</h2>
+                    <!--Productos-->
+                    <!--Muestro mis productos guardados-->
+                    <div class="pcarritos" id="pcarritos">
+                    </div>
+                    <br>
+                    <h4><img src="./Icon/tag-label-svgrepo-com.svg" alt="" width="30px" height="30px">
+                    Ingresar código promocional</h4>
+                </div>
+            </section>
+            <!--Resumen del pedido-->
+            <section class="sec2">
+                <div class="resumen1">
+                    <h2>Resumen del pedido</h2>
+                    <div class="resumen2">
+                        <div class="res1">
+                            <br>
+                            <h3>Subtotal</h3>
+                            <a><img src="./Icon/truck-svgrepo-com.svg" alt="" width="30px" height="30px"> Calcular envío</a>
+                        </div>
+                        <div class="res1">
+                            <h3>$<span id="subtotal"></span>.00</h3>
+                        </div>
+                    </div>
+                    <div class="resfinal">
+                        <h3>Total</h3>
+                        <h3>$<span id="total"></span>.00</h3>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-primary" id="btncomp" onclick="finalizarCompra(event)">Finalizar la compra</button>
+                        <h5><img src="./Icon/padlock-svgrepo-com.svg" alt="" width="20px" height="20px">
+                        Pago seguro</h5>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!--footer-->
+        <footer>
+            <div class="footer">
+                <div>
+                    <div>
+                        <h3 class="h3-footer">¿Estás registrada?</h3>
+                        <p class="txt-parrafo3">Únete para ofertas y descuentos exclusivos</p>
+                    </div>
+                    <div class="registro">
+                        <form action="">
+                            <div class="email">
+                                <label for=""></label>
+                                <input type="email" name="" id="" placeholder="E-mail">
+                            </div>
+                            <div class="submit">
+                                <input type="submit" value="Unirse" placeholder="Unirse">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr style="color: gray;">
+                <div class="contenedor-footer">
+                    <div class="contenedor1">
+                        <h4>Comprar</h4>
+                        <p>Productos</p>
+                        <p>Nuevo</p>
+                        <p>Más Vendidos</p>
+                        <p>Labios</p>
+                        <p>Rostro</p>
+                        <p>Ojos</p>
+                        <p>Uñas</p>
+                        <P>Cejas</P>
+                    </div>
+                    <div class="contenedor2">
+                        <h4>Tienda</h4>
+                        <address>Av. Fray A . Alcalde 10 44100 Gdl., Jal., Argentina ​</address>
+                        <p>Lunes-viernes: 11am-10pm</p>
+                        <p>Sábado-domingo: 11am-12pm</p>
+                        <p>Tel: +52-33-12345678</p>
+                        <p>Email: info@misitio.com</p>
+                    </div>
+                    <div class="contenedor3">
+                        <h4>Política</h4>
+                        <p>Envios y devoluciones</p>
+                        <p>Políca de la tienda</p>
+                        <p>Métodos de pago</p>
+                    </div>
+                    <div class="contenedor4">
+                        <h4>Atención al cliente</h4>
+                        <p>Tel: +52-1-33-12345678</p>
+                        <p>Email: info@misitio.com</p>
+                        <div class=" contenedor-redes-sociales">
+                            <div class="box-redes-sociales">
+                                <a class="facebook" href="www.facebook.com"><i class="fab fa-facebook"></i></a>
+                                <a class="twitter" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="youtube" href=""><i class="fab fa-youtube"></i></a>
+                                <a class="instagram" href=""><i class="fab fa-instagram" id="instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./Js/Bootstrap/bootstrap.min.js"></script>
+    <script src="./Js/jquery.min.js"></script>
+    <script src="./Js/BasicBase.js"></script>
+    <script src="./Js/Carrito.js"></script>
+    
+</body>
+
+</html>

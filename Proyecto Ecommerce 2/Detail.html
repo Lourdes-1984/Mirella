@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="descripcion"
+        content="Pagina de E-Commerce rica y lujosa para promocionar y vender  productos de maquillaje para la belleza de la mujer" />
+    <meta name="author" content="Carolina Lihuen,Fernanda, Maria Sosa, " />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./Css/Bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./Css/Detail.css">
+    <link rel="shortcut icon" href="Icon/cosmetics-makeup-svgrepo-com.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Salón de belleza</title>
+</head>
+
+<body>
+    <!-- ----------HEADER------------------- -->
+    <!-- <div id="nav-bar"> -->
+    <header class="container-fluido ">
+        <!-- --------  FORM BUSCADOR E ICONOS DE REDES SOCIALES-------------- -->
+        <div class="buscador">
+            <div class="buscar">
+                <form action="#">
+                    <div class="lupa">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="buscador-input">
+                        <a href="./Comprar-todo.html">
+                            <input type="search" name="input-buscar" id="input-buscar"
+                                placeholder="¿Qué estás buscando? " />
+                        </a>
+                    </div>
+                </form>
+            </div>
+            <!-- ---------TEXTO DEL DESCUENTO---------------- -->
+            <div class="box-descuento">
+                <h3 class="descuento">15% en todo el sitio </h3>
+            </div>
+            <!-- ------------ICONOS DE REDES SOCIALES----------- -->
+            <div class=" contenedor-redes-sociales">
+                <div class="box-redes-sociales">
+                    <a class="facebook" href=""><i class="fab fa-facebook"></i></a>
+                    <a class="twitter" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="youtube" href=""><i class="fab fa-youtube"></i></a>
+                    <a class="instagram" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- -----------LOGO Y MENU DE NAVEGACION---------- -->
+        <div class="contenedor-nav">
+            <nav class="nav-bar">
+                <div class="box-logo">
+                    <a class="logo" href="Home.html">Mirella</a>
+                </div>
+                <div class="nav">
+                    <a class="navb-link" href="Comprar-todo.html">COMPRAR TODO</a>
+                    <a class="navb-link" href="Nuevo.html">NUEVO</a>
+                    <a class="navb-link" href="Labios.html">LABIOS</a>
+                    <a class="navb-link" href="Rostro.html">ROSTRO</a>
+                    <a class="navb-link" href="Ojos.html">OJOS</a>
+                    <a class="navb-link" href="Uñas.html">UÑAS</a>
+                    <a class="navb-link" href="Cejas.html">CEJAS</a>
+                </div>
+                <!-- -------------ICONOS PARA EL LOGIN Y EL CARRITO DE COMPRAS------ -->
+                <div class="login">
+                    <a href="./Login.html">
+                        <i class="fas fa-user-circle user"></i>
+                    </a>
+                </div>
+                <a class="entrar" href="Login.html">Entrar</a>
+                <div class="carrito">
+                    <a href="./Carrito.html">
+                        <i class="fas fa-shopping-bag cartera"></i>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- ----------MAIN---------------------- -->
+    <section class="seccion-lienzo">
+        <div class="contenedor-info-producto">
+            <section class="contendeor-imagen-descripcion">
+                <!-- -------DIV LIENZO PARA LA IMAGEN ------>
+
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="Home.html"
+                                style="text-decoration:none ; color: gray">Home</a></li>
+                        <li class="breadcrumb-item active"> <a href="Comprar-todo.html"
+                                style="text-decoration:none ; color: gray">Comprar todo</a> </li>
+                    </ol>
+                </nav>
+                <div id="lienzo" class="lienzo row">
+
+                </div>
+                <!-- --------PARRAFO PARA LA DESCRIPCION -->
+                <p id="descripcion">
+                </p>
+
+            </section>
+        </div>
+        <div>
+            <section class="contenedor-info-producto">
+                <div class="box-nombre-producto">
+                    <!-- -------H1 PARA EL NOMBRE DEL PRODUCTO----- -->
+                    <h1 class="txt-nombre-producto" id="nombreProducto"></h1>
+                </div>
+                <div class="box-precio">
+                    <!-- -------SPAN PARA EL PRECIO------- -->
+                    <span class="precio" id="precio"></span>
+                </div>
+                <div class="inputs-opciones">
+                    <div class="inputs-ctd">
+                        <div class="box-label-opcion">
+                            <!-- <div class="box-label">
+                                <label for="" class="label-cantidad">Cantidad</label>
+                            </div>
+                            <div class="input-opcion">
+                                <input type="number" name="" id="input-cantidad">
+                            </div> -->
+                        </div>
+                        <div class="box-bt-icon">
+                            <div class="box-agregar">
+                                
+                                <button type="button" class="btn-agregar-carrito" id="btn-agregar-alcarro-detail"><span>Agregar al
+                                        carrito</span></button>
+                            </div>
+                            <div class="box-lista-deseo">
+                                <button type="button" class="btn-lista-deseo"><span><i
+                                            class="fa-solid fa-heart"></i></span></button>
+                            </div>
+                        </div>
+                        <div class="box-comprar">
+                            <button type="button" class="btn-comprar"><a href="Carrito.html">Realizar
+                                    compra</a></button>
+                        </div>
+                    </div>
+                    <div class="box-lista">
+                        <ul>
+                            <li>
+                                <!-- -------H6 PARA LOS DETALLES DE CATEGORIA PRODUCTO Y MARCA------ -->
+                                <button type="button" class="btn-politicas-envios">
+                                    <h2 class="txt-h2">información del producto</h2>
+                                    <h6 class="txt-h6" id="categoria"></h6>
+                                    <h6 class="txt-h6" id="producto"></h6>
+                                    <h6 class="txt-h6" id="marca"></h6>
+                                </button>
+
+                            </li>
+                            <li>
+                                <button type="button" class="btn-politicas-envios">
+                                    <h2 class="txt-h2">política de devolución y reembolso</h2>
+                                    <div class="collapse" id="collapseExample">
+                                        <div class="card item-politicas">
+                                            <p class="txt-h6">Los productos pueden devolverse gratis, sin importar el
+                                                motivo.
+                                            </p>
+                                            <h6 class="txt-h2" style="font-size: 12px;">¿Cuáles son los requisitos para
+                                                devolver un producto?
+                                            </h6>
+                                            <h6 class="txt-h2" style="font-size: 12px;"> Tiempo de cobertura:</h6>
+                                            <p class="txt-h6">Tenés 30 días corridos para devolverlo desde que te llegó.
+                                            </p>
+                                            <h6 class="txt-h2" style="font-size: 12px;">¿Puedo cambiar un producto?</h6>
+                                            <p class="txt-h6">Si bien no podemos cambiar un producto que compraste,
+                                                podés solicitar la devolución y recuperar tu dinero para comprar lo que
+                                                quieras. </p>
+                                            <h6 class="txt-h2" style="font-size: 12px;">¿Cuándo y dónde me reembolsan el
+                                                dinero de la devolución?
+                                            </h6>
+                                            <p class="txt-h6">Para más información sobre el reembolso después de
+                                                devolver un producto, podés consultar cuándo y dónde recibirás tu dinero
+                                                según el medio que usaste para pagar.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </button>
+                                <div>
+                                    <i class="fa-solid fa-plus" data-bs-toggle="collapse" href="#collapseExample"
+                                    data-bs-toggle="collapse" href="#collapseExample"></i>
+                                </div>
+                            </li>
+                          
+                            <li>
+                                <button type="button" class="btn-politicas-envios">
+                                    <h2 class="txt-h2">Formas de pago</h2>
+                                    <div  class="collapse" id="collapseExamp">
+                                        <i class="fa-brands fa-cc-visa" style="font-size:40px ; color:rgb(209,153,153);"></i>
+                                        <i class="fa-brands fa-cc-mastercard" style="font-size:40px ; color:rgb(209,153,153);"></i>
+                                        <i class="fa-brands fa-cc-paypal"style="font-size:40px ; color:rgb(209,153,153);"></i>
+                                        <i class="fa-brands fa-cc-amex"style="font-size:40px ; color:rgb(209,153,153);"></i>
+                                       
+                                    </div>
+                                </button>
+                                <div>
+                                    <i class="fa-solid fa-plus" data-bs-toggle="collapse" href="#collapseExamp"  aria-expanded="false" aria-controls="collapseExample"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <button type="button" class="btn-politicas-envios">
+                                    <h2 class="txt-h2">Información de envio</h2>
+                                    <div  class="collapse" id="collapseExampl">
+                                        <i class="fa-solid fa-truck"style="font-size:40px ; color:rgb(209,153,153);"></i>
+                                        <h6>Envios gratis a todo el país a partir de $10.000 pesos</h6>
+                                        <i class="fa-solid fa-store" style="font-size:40px ; color:rgb(209,153,153); "></i>
+                                       <h6>Recojer en tienda</h6>
+                                       <input type="checkbox" name="" id="">
+                                    </div>
+                                </button>
+                                <div>
+                                    <i class="fa-solid fa-plus" data-bs-toggle="collapse" href="#collapseExampl"  aria-expanded="false" aria-controls="collapseExample"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    
+   
+    <!----------------PIE DE PAGINA--------------------->
+    <footer>
+        <div class="footer">
+            <div class="">
+                <div>
+                    <h3 class="h3-footer">¿Estás registrada?</h3>
+                    <p class="txt-parrafo3">Únete para ofertas y descuentos exclusivos</p>
+                </div>
+                <div class="registro">
+                    <form action="">
+                        <div class="email">
+                            <label for="" class="label-email-registro">Ingresa tu email aqui</label>
+                            <input type="email" name="" id="" placeholder="E-mail">
+                        </div>
+                        <div class="submit">
+                            <input type="submit" value="Unirse" placeholder="Unirse">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr style="color: gray;">
+            <div class="contenedor-footer">
+
+                <div class="contenedor1">
+                    <h4>Comprar</h4>
+                    <a href="Comprar-todo.html">Productos</a>
+                    <a href="Nuevo.html">Nuevo</a>
+                    <a href="Nuevo.html">Más Vendidos</a>
+                    <a href="Labios.html">Labios</a>
+                    <a href="Rostro.html">Rostro</a>
+                    <a href="Ojos.html">Ojos</a>
+                    <a href="Cejas.html">Cejas</a>
+                </div>
+                <div class="contenedor2">
+                    <h4>Tienda</h4>
+                    <address>Av. Fray A . Alcalde 10 44100 Gdl., Jal., Argentina ​</address>
+                    <p>Lunes-viernes: 11am-10pm</p>
+                    <p>Sábado-domingo: 11am-12pm</p>
+                    <p>Tel: +52-33-12345678</p>
+                    <p>Email:<a href="mailto:sinfo@misitio.com">info@misitio.com</a></p>
+
+                </div>
+                <div class="contenedor3">
+                    <h4>Política</h4>
+                    <p>Envios y devoluciones</p>
+                    <p>Política de la tienda</p>
+                    <p>Métodos de pago</p>
+                </div>
+                <div class="contenedor4">
+                    <h4>Atención al cliente</h4>
+                    <p>Tel: +52-1-33-12345678</p>
+                    <p>Email:<a href="mailto:sinfo@misitio.com">info@misitio.com</a></p>
+
+                    <div class=" contenedor-redes-sociales">
+                        <div class="box-redes-sociales">
+                            <a class="facebook" href="www.facebook.com"><i class="fab fa-facebook"></i></a>
+                            <a class="twitter" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="youtube" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="instagram" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-----------------SCRIPTS----------------------- -->
+    <script src="./Js/jquery.min.js"></script>
+    <script src="./Js/Bootstrap/bootstrap.min.js"></script>
+    <script src="./Js/Home.js"></script>
+    <script src="./Js/BasicBase.js"></script>
+    <script src="./Js/Detail.js"></script>
+</body>
+
+</html>
